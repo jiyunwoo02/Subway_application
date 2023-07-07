@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    주문예약하기 > 7. 픽업 장소 및 시간 예약-->
+
+<!--    방문 시간 관련 내용 포함 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+
+<!--    방문 시간 텍스트뷰    -->
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="⏱︎ 방문하실 시간을 작성해주세요! ⏱︎"
+            android:textColor="#434545"
+            android:textSize="20sp" />
+
+<!--        빈칸 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--        픽업 시간 작성 에디트텍스트-->
+        <EditText
+            android:id="@+id/timetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="👉 픽업할 시간 작성\n\n(*24시간제, 꼭 작성하신 시간 내에 방문해주세요!)"
+            android:inputType="time" />
+    </LinearLayout>
+
+<!--    서브웨이 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/subway" />
+
+<!--    주문하기 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="주문하기"
+        android:textSize="20sp" />
+
+<!--    초록 라인 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="_______________________________________________________________"
+        android:textColor="#4CAF50" />
+
+<!--   7. 픽업 장소 및 시간 예약 텍스트뷰 -->
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-black"
+        android:text="8. 픽업 장소 및 시간 예약"
+        android:textColor="#4CB150"
+        android:textSize="24sp" />
+
+<!--    네이버 지도 이동 버튼-->
+    <Button
+        android:id="@+id/navermapbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="네이버 지도로 매장 찾기"
+        app:backgroundTint="#4CAF50" />
+
+<!--    방문 지점 관련 내용 포함 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+<!--        방문 지점 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="🥪 방문하실 지점을 작성해주세요! 🥪"
+            android:textColor="#434545"
+            android:textSize="20sp" />
+
+<!--        빈칸 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--        픽업 지점 작성 에디트텍스트-->
+        <EditText
+            android:id="@+id/storetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="👉 픽업할 서브웨이 지점 작성\n\n(*꼭 지점명이 맞는지 확인해주세요!\n 지점명 잘못 입력 시 주문이 무산될 수 있습니다.)"
+            android:inputType="text" />
+    </LinearLayout>
+
+<!--    주문 제출 버튼-->
+    <Button
+        android:id="@+id/ordersubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:text="주문 제출"
+        app:backgroundTint="#FFC107" />
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    주문예약하기 > 4. 추가 옵션 선택-->
+
+<!--    next 버튼-->
+    <Button
+        android:id="@+id/nextorder3"
+        android:layout_width="49dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="NEXT"
+        app:backgroundTint="#FFC107" />
+
+<!--    토핑 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+<!--        라디오그룹-->
+        <RadioGroup
+            android:id="@+id/topping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<!--        토핑 선택 텍스트뷰-->
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="(1) 토핑 추가 선택 (15cm 기준)"
+                android:textSize="16sp" />
+
+<!--            체크박스 1-->
+            <CheckBox
+                android:id="@+id/rb10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="베이컨 : 900원" />
+
+<!--            체크박스 2-->
+            <CheckBox
+                android:id="@+id/rb18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계란 : 700원" />
+
+<!--            체크박스 3-->
+            <CheckBox
+                android:id="@+id/rb11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="더블치즈 : 700원" />
+
+<!--            체크박스 4-->
+            <CheckBox
+                android:id="@+id/rb19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아보카도 : 900원" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+<!--    토스트 라디오그룹 포함하는 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="370dp"
+        android:orientation="vertical">
+
+<!--        토스트 라디오그룹-->
+    <RadioGroup
+        android:id="@+id/breadheat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        토스트 여부 텍스트뷰-->
+        <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="(2) 토스트 여부" android:gravity="center"
+        android:textSize="16sp" />
+
+<!--        라디오버튼 1-->
+        <RadioButton
+            android:id="@+id/rb12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="빵 데우기 (기본 30초)" />
+
+<!--        라디오버튼 2-->
+        <RadioButton
+            android:id="@+id/rb13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="빵 안 데우기" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+<!--    세트메뉴 라디오그룹 포함하는 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="490dp"
+        android:orientation="vertical">
+
+<!--        세트메뉴 라디오그룹-->
+        <RadioGroup
+            android:id="@+id/setadd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            세트메뉴 적용 여부 텍스트뷰-->
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="(3) 세트메뉴 적용 여부"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+<!--            라디오버튼 1-->
+            <RadioButton
+                android:id="@+id/rb14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세트 메뉴 적용 (+1,700원) : 탄산음료, 쿠키 제공" />
+
+<!--            라디오버튼 2-->
+            <RadioButton
+                android:id="@+id/rb15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="단품 메뉴 적용" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+<!--    4. 추가 옵션 선택 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-black"
+        android:text="4. 추가 옵션 선택"
+        android:textColor="#4CB150"
+        android:textSize="24sp" />
+
+<!--    서브웨이 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/subway" />
+
+<!--    주문하기 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="주문하기"
+        android:textSize="20sp" />
+
+<!--    초록 라인 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="_______________________________________________________________"
+        android:textColor="#4CAF50" />
+</RelativeLayout>

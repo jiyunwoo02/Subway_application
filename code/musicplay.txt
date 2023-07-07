@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+<!--    음악 재생 버튼-->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="428dp"
+        android:text="음악서비스 시작"
+        app:backgroundTint="#4CAF50" />
+
+<!--    음악 중지 버튼-->
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="482dp"
+        android:text="음악서비스 중지"
+        app:backgroundTint="#FF9800" />
+
+<!--    크리스마스 이미지-->
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="84dp"
+        app:srcCompat="@drawable/christmas" />
+
+<!--    음악 서비스 텍스트-->
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:fontFamily="sans-serif-black"
+        android:text="고요한 밤 거룩한 밤 음악 서비스"
+        android:textColor="#4CAF50"
+        android:textSize="20sp" />
+
+</RelativeLayout>
