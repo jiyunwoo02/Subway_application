@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="370dp"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"  >
+
+<!--    마이페이지 > 문의하기-->
+<!--    대화상자-->
+
+<!--    문의하기 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="문의하기"
+        android:textSize="34sp" />
+
+<!--    faq 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="FAQ"
+        android:textSize="16sp" />
+
+<!--    빈칸 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    이메일 아이디 에디트텍스트-->
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="이메일 아이디 (*필수)"
+        android:inputType="text">
+
+    </EditText>
+
+    <requestFocus></requestFocus>
+
+<!--    문의 입력 에디트텍스트-->
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:hint="문의사항 입력\n(욕설이 포함된 사항은 입력을 삼가해주십시오.)"
+        android:inputType="text">
+
+    </EditText>
+
+<!--개인정보 이용 테크박스-->
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보 수집 및 이용에 동의합니다." />
+
+<!--    문의사항 버튼 포함 선형 레이아웃-->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+<!--        문의사항 버튼-->
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="문의사항 제출"
+            android:textColor="#263238"
+            app:backgroundTint="#4CAF50">
+
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

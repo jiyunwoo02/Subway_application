@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    주문예약하기 > 2. 사이즈 선택 3. 빵 선택-->
+
+<!--    2. 사이즈 선택 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-black"
+        android:text="2. 사이즈 선택"
+        android:textColor="#4CB150"
+        android:textSize="24sp" />
+
+<!--    서브웨이 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/subway" />
+
+<!--    주문하기 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="주문하기"
+        android:textSize="20sp" />
+
+<!--    초록 라인 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="_______________________________________________________________"
+        android:textColor="#4CAF50" />
+
+<!--    3. 빵 선택 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:fontFamily="sans-serif-black"
+        android:text="3. 빵 선택"
+        android:textColor="#4CB150"
+        android:textSize="24sp" />
+
+<!--    빵 사이즈 라디오그룹 포함하는 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+<!--        빵 사이즈 라디오그룹-->
+        <RadioGroup
+            android:id="@+id/topping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            라디오버튼 1-->
+            <RadioButton
+            android:id="@+id/rb10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15cm (6인치) : 4,300원 ~ 5,500원" />
+
+<!--            라디오버튼 2-->
+            <RadioButton
+            android:id="@+id/rb11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30cm (12인치) : 8,000원 ~ 9,500원" />
+        </RadioGroup>
+    </LinearLayout>
+
+<!--    빵 라디오그룹 포함하는 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+<!--        빵 라디오그룹-->
+        <RadioGroup
+            android:id="@+id/bread"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            라디오버튼 1-->
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="허니오트 : 견과류가 묻어 있는 달콤한 빵" />
+
+            <!--            라디오버튼 2-->
+            <RadioButton
+                android:id="@+id/rb13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="플랫 브레드 : 납작하고 쫄깃한 빵" />
+
+            <!--            라디오버튼 3-->
+            <RadioButton
+                android:id="@+id/rb14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="화이트 : 오리지널 메뉴가 어울리는 기본 빵" />
+
+            <!--            라디오버튼 4-->
+            <RadioButton
+                android:id="@+id/rb15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="위트 : 칼로리가 낮은 고소한 통밀빵" />
+
+            <!--            라디오버튼 5-->
+            <RadioButton
+                android:id="@+id/rb16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="파마산 오레가노 : 파마산 치즈 가루가 뿌려진 빵" />
+
+            <!--            라디오버튼 6-->
+            <RadioButton
+                android:id="@+id/rb17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="하티 이탈리안 : 화이트빵에 옥수수가루를 뿌린 빵" />
+        </RadioGroup>
+    </LinearLayout>
+
+<!--    next 버튼-->
+    <Button
+        android:id="@+id/nextorder2"
+        android:layout_width="49dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="NEXT"
+        app:backgroundTint="#FFC107" />
+
+
+</RelativeLayout>

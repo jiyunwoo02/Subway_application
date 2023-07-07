@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    메인 화면-->
+    <!--    서브웨이 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="198dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="-7dp"
+        app:srcCompat="@drawable/subway" />
+
+<!--    직선 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="_______________________________________________________________"
+        android:textColor="#4CAF50" />
+
+    <!--    이벤트 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="352dp"
+        android:layout_height="176dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="57dp"
+        app:srcCompat="@drawable/event" />
+
+    <!--    상세 보기 버튼-->
+    <Button
+        android:id="@+id/see"
+        android:layout_width="50dp"
+        android:layout_height="167dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="7dp"
+        android:onClick="eventseeClicked"
+        android:text=">>"
+        app:backgroundTint="#307333" />
+
+    <!--    버튼 2개 포함하는 선형 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="230dp">
+
+        <!--     매장 찾기 (네이버 지도 이동) 버튼-->
+        <Button
+            android:id="@+id/mapfind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.5"
+            android:onClick="mapfindClicked"
+            android:text="매장 찾기 ( 네이버지도 ) "
+            app:backgroundTint="#62D867" />
+
+<!--        공식 사이트 이동 버튼-->
+        <Button
+            android:id="@+id/site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="siteClicked"
+            android:text="> 서브웨이 공식 사이트"
+            app:backgroundTint="#A7E364" />
+    </LinearLayout>
+
+<!--    서브웨이 즐기기 버튼-->
+    <Button
+        android:id="@+id/enjoy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="0dp"
+        android:text="서브웨이를 제대로 즐기는 방법!  Click  ٩( ᐛ )و"
+        app:backgroundTint="#F3CF64" />
+
+<!--서브웨이 메뉴 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="325dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Subway's Menu"
+        android:textColor="#FFC107"
+        android:textSize="20sp" />
+
+<!--    상세 보기 버튼-->
+    <Button
+        android:id="@+id/arrow"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="5dp"
+        android:text=">"
+        app:backgroundTint="#FFC107" />
+
+<!--    샌드위치 이미지뷰1-->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="359dp"
+        app:srcCompat="@drawable/chickenslice" />
+
+    <!--    샌드위치 이미지뷰3-->
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="120dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        app:srcCompat="@drawable/italianbmt" />
+
+    <!--    샌드위치 이미지뷰2-->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="120dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="359dp"
+        app:srcCompat="@drawable/eggmayo" />
+
+<!--    이미지뷰 3개 포함하는 성형 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="510dp"
+        android:orientation="horizontal">
+
+<!--        이미지뷰 1-->
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/support" />
+
+<!--        이미지뷰 2-->
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/yumicell" />
+
+<!--        이미지뷰 3-->
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/better" />
+
+    </LinearLayout>
+
+<!--    주문현황 조회 버튼-->
+    <Button
+        android:id="@+id/orderstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="447dp"
+        android:layout_marginEnd="59dp"
+        android:onClick="orderstatusClicked"
+        android:text=">> 주문현황 조회"
+        app:backgroundTint="#8BC34A" />
+
+<!--    주문예약하기 버튼-->
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="447dp"
+        android:layout_marginEnd="235dp"
+        android:text="> 주문예약하기"
+        app:backgroundTint="#4CAF50" />
+
+<!--사용자 이미지-->
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="33dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        app:srcCompat="@drawable/user" />
+
+<!--    헤드폰 이미지-->
+    <ImageView
+        android:id="@+id/musichear"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/musicicon" />
+
+</RelativeLayout>

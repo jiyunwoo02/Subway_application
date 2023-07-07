@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    주문예약하기 > 6.소스 선택 -->
+<!--    NEXT 버튼-->
+    <Button
+        android:id="@+id/nextorder5"
+        android:layout_width="49dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="NEXT"
+        app:backgroundTint="#FFC107" />
+
+<!--    소스 체크박스 4개 포함하는 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+<!--        체크박스 1번-->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고소한 소스 \n(랜치드레싱, 마요네즈)" />
+
+<!--        체크박스 2번-->
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="달콤한 소스 \n(스위트 어니언, 허니 머스타드, 스위트 칠리, 바베큐)" />
+
+<!--        체크박스 3번-->
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="매콤한 소스  \n (핫 칠리, 디종 홀드 래디쉬, 사우트 웨스트, 머스타드)" />
+
+<!--        체크박스 4번-->
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="새콤한 소스\n (사우전 아일랜드, 이탈리안 드레싱) " />
+
+    </LinearLayout>
+
+<!--    서브웨이 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/subway" />
+
+<!--    주문하기 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="주문하기"
+        android:textSize="20sp" />
+
+<!--    초록 라인 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="_______________________________________________________________"
+        android:textColor="#4CAF50" />
+
+<!--    6. 소스 선택 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:fontFamily="sans-serif-black"
+        android:text="6. 소스 선택"
+        android:textColor="#4CB150"
+        android:textSize="24sp" />
+
+<!--    소스 추천 이미지뷰 2개 포함하는 선형레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="370dp"
+        android:orientation="horizontal">
+
+<!--        소스 추천 이미지뷰 1번-->
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/sause" />
+
+<!--        소스 추천 이미지뷰 2번-->
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/sause1" />
+    </LinearLayout>
+
+<!--    소스 추천조합 사이트 이동 버튼-->
+    <Button
+        android:id="@+id/sause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="540dp"
+        android:text="소스 추천조합 사이트 이동"
+        app:backgroundTint="#4CAF50" />
+
+</RelativeLayout>

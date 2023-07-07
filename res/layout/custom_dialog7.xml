@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"  >
+
+<!--    주문현황 조회 버튼 > 주문 현황-->
+
+<!--    서브웨이 이미지뷰-->
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/subway" />
+
+<!--    주문 현황 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="주문 현황"
+        android:textColor="#4CAF50"
+        android:textSize="34sp" />
+
+<!--    빈칸 텍스트뷰-->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+<!--    주문 -->
+    <Button
+        android:id="@+id/tunareview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1204 SUBWAY 광운대역점 (13:07pm)\n 서브웨이클럽 샌드위치 + 초코칩 쿠키 + 콜라 M"
+        android:textSize="16sp"
+        app:backgroundTint="#8BC34A" />
+
+<!--    주문 현황 선형 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+<!--        빈칸 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--        주문현황 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="1204 주문현황"
+            android:textSize="20sp" />
+
+<!--        빈칸 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--        주문 접수 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="😇 주문 접수  (13:12pm)"
+            android:textColor="#4CAF50"
+            android:textSize="20sp" />
+
+        <!--        빈칸 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--        화살표 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="⬇"
+            android:textSize="20sp" />
+
+<!--        주문사항 준비 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="😊 주문사항 준비 중입니다 (13:15pm ~ )\n늦지 않도록 준비하겠습니다!"
+            android:textColor="#4CAF50"
+            android:textSize="20sp" />
+
+        <!--        빈칸 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--        화살표 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="⬇"
+            android:textSize="20sp" />
+
+<!--        도착 시간 텍스트뷰-->
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="😀 손님 예약 도착 시간 (13:30pm)"
+            android:textColor="#009688"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+<!--    전 주문내역-->
+    <Button
+        android:id="@+id/hamcoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1124 SUBWAY 역삼점\n햄 샌드위치 + 커피"
+        app:backgroundTint="#989696" />
+
+<!--    주문내역 조회 사항 텍스트뷰-->
+    <TextView
+        android:id="@+id/hamstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="(*이미 수령하신 상품은 주문 현황 조회가 불가능합니다.)"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
